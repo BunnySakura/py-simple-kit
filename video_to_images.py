@@ -41,7 +41,7 @@ def video_to_images(video_path, output_folder, step=1):
         if frame_count % step == 0:
             # 生成输出图像的等长序号和文件名
             file_serial_number = str(frame_count // step).zfill(total_output_frames)
-            output_file = f"{output_folder}/frame_{file_serial_number}.jpg"
+            output_file = f"{output_folder}/frame_{file_serial_number}.png"
             # 保存图像文件
             cv2.imwrite(output_file, frame)
 
